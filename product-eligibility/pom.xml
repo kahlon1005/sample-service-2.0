@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.bcldb.service</groupId>
+	<artifactId>product-eligibility</artifactId>
+	<parent>
+		<groupId>com.bcldb.common</groupId>
+		<artifactId>bcldb-corp-pom</artifactId>
+		<version>1.1.0</version>
+	</parent>
+	<version>1.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>BC LDB - Product Eligibility Build Project</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.7</jdk.version>
+	</properties>
+
+	<scm>
+		<connection>
+			scm:svn:http://subversion.bcliquor.com/svn/SOA/Services/ProductEligibilityService/trunk/product-eligibility
+		</connection>
+
+	</scm>
+
+	<modules>
+		<module>../product-eligibility-war</module>
+		<module>../product-eligibility-ejb</module>
+		<module>../product-eligibility-ear</module>
+	</modules>
+</project>
